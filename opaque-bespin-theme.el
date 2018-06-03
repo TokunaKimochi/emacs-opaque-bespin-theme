@@ -228,7 +228,7 @@
 
    ;; Emacs interface
    `(cursor ((,class (:background "#A7A7A7"))))
-   `(fringe ((,class (:background ,background))))
+   `(fringe ((,class (:background ,background :foreground ,atom-one-dark-gray))))
    `(linum ((,class (:background ,background :foreground "#BAAE9E"))))
    `(linum-highlight-face ((,class (:background ,current-line :foreground ,foreground))))
    `(border ((,class (:background ,current-line))))
