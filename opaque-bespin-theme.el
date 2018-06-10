@@ -1,20 +1,14 @@
-;;; opaque-bespin-theme.el --- A Theme based on the colors of the material-theme.el
+;;; opaque-bespin-theme.el --- A Theme based on the colors of the Mozilla Bespin
+
+;; Copyright (C) 2014 Paulik Christoph
+;; Copyright (C) 2018 TokunaKimochi
 
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 2018
-;; X-Original-Version: 0.1
+;; Version: 20180610.0001
+;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
-
-;; ;; _Copyright (C) 2014 Paulik Christoph
-
-;; ;; _Author: Christoph Paulik <cpaulik@gmail.com>
-;; ;; _Keywords: themes
-;; ;; _URL: http://github.com/cpaulik/emacs-material-theme
-;; ;; _Version: 2015
-;; ;; _X-Original-Version: 0.1
-;; ;; _Package-Requires: ((emacs "24.1"))
 
 ;; Permission is hereby granted, free of charge, to any person obtaining a copy
 ;; of this software and associated documentation files (the "Software"), to deal
@@ -41,6 +35,11 @@
 ;;   (load-theme 'opaque-bespin t)
 ;;
 ;; Requirements: Emacs 24.
+
+;;; Credits:
+
+;; Thanks to Christoph Paulik of the Material Theme which was used as the boilerplate:
+;; http://github.com/cpaulik/emacs-material-theme
 
 ;;; Code:
 
