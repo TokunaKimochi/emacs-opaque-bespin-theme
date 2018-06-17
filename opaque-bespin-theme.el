@@ -6,7 +6,7 @@
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180610.0001
+;; Version: 20180617.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -79,7 +79,7 @@
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection (if (or window-system truecolor) "#534D49" "#555555")) ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
-       (foreground "#BAAE9E")
+       (foreground (if (or window-system truecolor) "#BAAE9E" "#ffffff"))
        (comment "#666666") ;; table-row
        (red "#e5786d") ;; tab-control-hover-tab-close-button
        (orange "#cf6a4c") ;; darker tab-control-dirty-tab-close-butto
@@ -116,6 +116,7 @@
    `(highlight-numbers-number ((,class (:foreground "#9ccc65"))))
    `(shadow ((,class (:foreground "#777777"))))
    `(success ((,class (:foreground "SeaGreen2"))))
+   `(tooltip ((,class (:background ,atom-one-dark-gray :foreground ,atom-one-dark-silver :bold nil :italic nil :underline nil))))
    `(error ((,class (:foreground "#F8F8F8" :background "#4a2a47"))))
    `(warning ((,class (:foreground ,orange))))
 
