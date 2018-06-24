@@ -6,7 +6,7 @@
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180617.0001
+;; Version: 20180624.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -70,6 +70,8 @@
        (atom-one-dark-mono-3 (if (or window-system truecolor) "#5C6370" "color-240"))
        (atom-one-dark-silver (if (or window-system truecolor) "#9DA5B4" "color-247"))
        (atom-one-dark-yellow "#EBDD5B")
+
+       (whitespace-yellow "#f1fa8c")
 
        (background (if (or window-system truecolor) "#28211C" "#262626")) ;; sidebar-container
        (current-line (if (or window-system truecolor)  "#3E3733" "#3a3a3a")) ;; tree-row
@@ -263,10 +265,10 @@
    `(whitespace-empty ((,class (:foreground ,red :inverse-video t :underline nil))))
    `(whitespace-line ((,class (:background nil :foreground ,red))))
    `(whitespace-indentation ((,class (:background nil :foreground ,aqua))))
-   `(whitespace-space ((,class (:background nil :foreground ,selection))))
-   `(whitespace-newline ((,class (:background nil :foreground ,selection))))
-   `(whitespace-tab ((,class (:background nil :foreground ,selection))))
-   `(whitespace-hspace ((,class (:background nil :foreground ,selection))))
+   `(whitespace-space ((,class (:background nil :foreground ,whitespace-yellow))))
+   `(whitespace-newline ((,class (:background nil :foreground ,whitespace-yellow))))
+   `(whitespace-tab ((,class (:background nil :foreground ,whitespace-yellow :underline t))))
+   `(whitespace-hspace ((,class (:background nil :foreground ,whitespace-yellow))))
 
    ;; Parenthesis matching (built-in)
    `(show-paren-match-face ((,class (:background ,aqua :foreground "black"))))
