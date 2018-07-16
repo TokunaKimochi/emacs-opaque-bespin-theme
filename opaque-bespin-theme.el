@@ -6,7 +6,7 @@
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180624.0001
+;; Version: 20180716.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -71,7 +71,8 @@
        (atom-one-dark-silver (if (or window-system truecolor) "#9DA5B4" "color-247"))
        (atom-one-dark-yellow "#EBDD5B")
 
-       (whitespace-yellow "#f1fa8c")
+       (dracula-red "#ff5555")
+       (dracula-yellow "#f1fa8c")
 
        (background (if (or window-system truecolor) "#28211C" "#262626")) ;; sidebar-container
        (current-line (if (or window-system truecolor)  "#3E3733" "#3a3a3a")) ;; tree-row
@@ -258,17 +259,17 @@
 
    `(header-line ((,class (:inherit mode-line :foreground ,purple :background nil))))
 
-   `(trailing-whitespace ((,class (:foreground ,red :inverse-video t :underline nil))))
-   `(whitespace-trailing ((,class (:foreground ,red :inverse-video t :underline nil))))
-   `(whitespace-space-after-tab ((,class (:foreground ,red :inverse-video t :underline nil))))
-   `(whitespace-space-before-tab ((,class (:foreground ,red :inverse-video t :underline nil))))
-   `(whitespace-empty ((,class (:foreground ,red :inverse-video t :underline nil))))
-   `(whitespace-line ((,class (:background nil :foreground ,red))))
+   `(trailing-whitespace ((,class (:foreground ,dracula-red :inverse-video t :underline nil))))
+   `(whitespace-trailing ((,class (:foreground ,dracula-red :inverse-video t :underline nil))))
+   `(whitespace-space-after-tab ((,class (:foreground ,dracula-red :inverse-video t :underline nil))))
+   `(whitespace-space-before-tab ((,class (:foreground ,dracula-red :inverse-video t :underline nil))))
+   `(whitespace-empty ((,class (:foreground ,dracula-red :inverse-video t :underline nil))))
+   `(whitespace-line ((,class (:background nil :foreground ,dracula-red))))
    `(whitespace-indentation ((,class (:background nil :foreground ,aqua))))
-   `(whitespace-space ((,class (:background nil :foreground ,whitespace-yellow))))
-   `(whitespace-newline ((,class (:background nil :foreground ,whitespace-yellow))))
-   `(whitespace-tab ((,class (:background nil :foreground ,whitespace-yellow :underline t))))
-   `(whitespace-hspace ((,class (:background nil :foreground ,whitespace-yellow))))
+   `(whitespace-space ((,class (:background nil :foreground ,dracula-yellow))))
+   `(whitespace-newline ((,class (:background nil :foreground ,dracula-yellow))))
+   `(whitespace-tab ((,class (:background nil :foreground ,dracula-yellow :underline t))))
+   `(whitespace-hspace ((,class (:background nil :foreground ,dracula-yellow :weight bold))))
 
    ;; Parenthesis matching (built-in)
    `(show-paren-match-face ((,class (:background ,aqua :foreground "black"))))
