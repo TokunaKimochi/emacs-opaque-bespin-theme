@@ -6,7 +6,7 @@
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180716.0001
+;; Version: 20180729.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -71,6 +71,7 @@
        (atom-one-dark-silver (if (or window-system truecolor) "#9DA5B4" "color-247"))
        (atom-one-dark-yellow "#EBDD5B")
 
+       (dracula-pink "#ff79c6")
        (dracula-red "#ff5555")
        (dracula-yellow "#f1fa8c")
 
@@ -122,6 +123,7 @@
    `(tooltip ((,class (:background ,atom-one-dark-gray :foreground ,atom-one-dark-silver :bold nil :italic nil :underline nil))))
    `(error ((,class (:foreground "#F8F8F8" :background "#4a2a47"))))
    `(warning ((,class (:foreground ,orange))))
+   `(user-defined-number-face ((,class (:foreground "#CF6A4C"))))
 
    ;; ace-window faces
    `(aw-leading-char-face ((,class (:foreground ,
@@ -185,16 +187,16 @@
    `(clojure-java-call ((,class (:foreground ,purple))))
 
    ;; Rainbow-delimiters
-   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,red))))
-   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,blue))))
-   `(rainbow-delimiters-depth-3-face ((,class (:foreground ,orange))))
-   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,purple))))
-   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,green))))
-   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,"#26A69A"))))
-   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,"#FFCDD2"))))
-   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,"#795548"))))
-   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,"#DCE775"))))
-   `(rainbow-delimiters-unmatched-face ((,class (:foreground ,foreground :background ,"#EF6C00"))))
+   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,"#f8f8f2"))))
+   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,"#8be9fd"))))
+   `(rainbow-delimiters-depth-3-face ((,class (:foreground ,"#bd93f9"))))
+   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,"#ff79c6"))))
+   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,"#ffb86c"))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,"#50fa7b"))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,"#f1fa8c"))))
+   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,"#0189cc"))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,"#ff5555"))))
+   `(rainbow-delimiters-unmatched-face ((,class (:foreground ,"#ffb86c" :background ,"#EF6C00"))))
 
    ;; MMM-mode
    `(mmm-code-submode-face ((,class (:background ,current-line))))
@@ -272,11 +274,11 @@
    `(whitespace-hspace ((,class (:background nil :foreground ,dracula-yellow :weight bold))))
 
    ;; Parenthesis matching (built-in)
-   `(show-paren-match-face ((,class (:background ,aqua :foreground "black"))))
-   `(show-paren-mismatch-face ((,class (:background "red1" :foreground "white"))))
+   `(show-paren-match-face ((,class (:background ,dracula-pink :foreground "black"))))
+   `(show-paren-mismatch-face ((,class (:background dracula-red :foreground "white"))))
 
    ;; Smartparens paren matching
-   `(sp-show-pair-match-face ((,class (:foreground "black" :background ,aqua :inherit show-paren-match))))
+   `(sp-show-pair-match-face ((,class (:foreground "black" :background ,dracula-pink :inherit show-paren-match))))
    `(sp-show-pair-mismatch-face ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
 
    ;; Parenthesis matching (mic-paren)
