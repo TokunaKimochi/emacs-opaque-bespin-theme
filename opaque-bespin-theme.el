@@ -6,7 +6,7 @@
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180729.0001
+;; Version: 20180807.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -158,8 +158,8 @@
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
    ;; highlight indentation
-   `(highlight-indentation-face ((,class (:background, current-line))))
-   `(highlight-indentation-current-column-face ((,class (:background, far-background))))
+   `(highlight-indentation-face ((,class (:background ,far-background))))
+   `(highlight-indentation-current-column-face ((,class (:background "#3a3431"))))
 
    ;; Flymake
    `(flymake-warnline ((,class (:underline (:style wave :color ,orange) :background ,background))))
@@ -241,7 +241,7 @@
    ;; Emacs interface
    `(cursor ((,class (:background "#A7A7A7"))))
    `(fringe ((,class (:background ,background :foreground ,atom-one-dark-gray))))
-   `(linum ((,class (:background ,background :foreground "#BAAE9E"))))
+   `(linum ((,class (:background ,background :foreground "#5D4C40"))))
    `(linum-highlight-face ((,class (:background ,current-line :foreground ,foreground))))
    `(border ((,class (:background ,current-line))))
    `(vertical-border ((,class (:background ,selection
