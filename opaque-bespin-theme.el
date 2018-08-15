@@ -6,7 +6,7 @@
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180807.0001
+;; Version: 20180815.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -124,6 +124,9 @@
    `(error ((,class (:foreground "#F8F8F8" :background "#4a2a47"))))
    `(warning ((,class (:foreground ,orange))))
    `(user-defined-number-face ((,class (:foreground "#CF6A4C"))))
+   `(user-defined-evil-insert-and-hybrid-state-face ((,class (:background "#2f3241"))))
+   `(user-defined-evil-insert-and-hybrid-state-hi-face ((,class (:background "#3a3431"))))
+   `(user-defined-evil-insert-and-hybrid-state-hicc-face ((,class (:background ,far-background))))
 
    ;; ace-window faces
    `(aw-leading-char-face ((,class (:foreground ,
