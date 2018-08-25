@@ -125,7 +125,6 @@
    `(warning ((,class (:foreground ,orange))))
    `(user-defined-number-face ((,class (:foreground "#CF6A4C"))))
    `(user-defined-evil-insert-and-hybrid-state-face ((,class (:background "#1f1305"))))
-   `(user-defined-evil-insert-and-hybrid-state-fringe-face ((,class (:background "#1f1305"))))
 
    ;; ace-window faces
    `(aw-leading-char-face ((,class (:foreground ,
