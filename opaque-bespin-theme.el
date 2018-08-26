@@ -6,7 +6,7 @@
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180820.0001
+;; Version: 20180826.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -71,7 +71,11 @@
        (atom-one-dark-silver (if (or window-system truecolor) "#9DA5B4" "color-247"))
        (atom-one-dark-yellow "#EBDD5B")
 
+       (dracula-background "#282a36")
+       (dracula-foreground "#f8f8f2")
+       (dracula-green "#50fa7b")
        (dracula-pink "#ff79c6")
+       (dracula-purple "#bd93f9")
        (dracula-red "#ff5555")
        (dracula-yellow "#f1fa8c")
 
@@ -124,7 +128,7 @@
    `(error ((,class (:foreground "#F8F8F8" :background "#4a2a47"))))
    `(warning ((,class (:foreground ,orange))))
    `(user-defined-number-face ((,class (:foreground "#CF6A4C"))))
-   `(user-defined-evil-insert-and-hybrid-state-face ((,class (:background "#1f1305"))))
+   `(user-defined-evil-insert-and-hybrid-state-face ((,class (:background ,dracula-background))))
 
    ;; ace-window faces
    `(aw-leading-char-face ((,class (:foreground ,
@@ -213,9 +217,9 @@
 
    ;; Evil
    `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,background
-                                                            :background ,green))))
+                                                            :background ,dracula-green))))
    ;; iedit
-   `(iedit-occurrence ((,class (:foreground ,background :background ,green))))
+   `(iedit-occurrence ((,class (:foreground ,background :background ,dracula-green))))
 
    ;; ahs
    `(ahs-face ((,class (:inherit nil :background "#888A85"))))
@@ -467,6 +471,7 @@
    `(helm-buffer-not-saved ((,class (:foreground ,orange))))
    `(helm-candidate-number ((,class (:foreground ,foreground :background ,"#ef6c00"))))
    `(helm-source-header ((,class (:background ,header-color :foreground ,"#eceff1" :height 1.3 :bold t ))))
+   `(helm-swoop-target-word-face ((,class (:background ,dracula-purple :foreground ,dracula-foreground))))
 
    ;; guide-key
    `(guide-key/key-face ((,class (:foreground ,foreground ))))
