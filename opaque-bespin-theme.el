@@ -1,12 +1,12 @@
 ;;; opaque-bespin-theme.el --- A Theme based on the colors of the Mozilla Bespin
 
 ;; Copyright (C) 2014 Paulik Christoph
-;; Copyright (C) 2018 TokunaKimochi
+;; Copyright (C) 2018-2019 TokunaKimochi
 
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20180826.0001
+;; Version: 20191019.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -50,7 +50,8 @@
        (256color  (eq (display-color-cells (selected-frame)) 256))
        (truecolor (eq (display-color-cells (selected-frame)) 16777216))
 
-       (sed-act1 (if (or window-system truecolor) "#222226" "#121212")) ;; from spacemacs-dark-theme
+       ;; sed => spacemacs-dark-theme
+       (sed-act1 (if (or window-system truecolor) "#222226" "#121212"))
        (sed-act2 (if (or window-system truecolor) "#5d4d7a" "#444444"))
        (sed-base (if (or window-system truecolor) "#b2b2b2" "#b2b2b2"))
        (sed-bg1 (if (or window-system truecolor) "#292b2e" "#262626"))
@@ -70,6 +71,8 @@
        (atom-one-dark-mono-3 (if (or window-system truecolor) "#5C6370" "color-240"))
        (atom-one-dark-silver (if (or window-system truecolor) "#9DA5B4" "color-247"))
        (atom-one-dark-yellow "#EBDD5B")
+       ;; bop => Birds of Paradise
+       (bop-brown "#372725")
 
        (dracula-background "#282a36")
        (dracula-foreground "#f8f8f2")
@@ -128,7 +131,7 @@
    `(error ((,class (:foreground "#F8F8F8" :background "#4a2a47"))))
    `(warning ((,class (:foreground ,orange))))
    `(user-defined-number-face ((,class (:foreground "#CF6A4C"))))
-   `(user-defined-evil-insert-and-hybrid-state-face ((,class (:background ,dracula-background))))
+   `(user-defined-evil-insert-and-hybrid-state-face ((,class (:background ,bop-brown))))
 
    ;; ace-window faces
    `(aw-leading-char-face ((,class (:foreground ,
