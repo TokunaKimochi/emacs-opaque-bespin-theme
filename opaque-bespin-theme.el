@@ -1,12 +1,12 @@
 ;;; opaque-bespin-theme.el --- A Theme based on the colors of the Mozilla Bespin
 
 ;; Copyright (C) 2014 Paulik Christoph
-;; Copyright (C) 2018-2019 TokunaKimochi
+;; Copyright (C) 2018-2020 TokunaKimochi
 
 ;; Author: TokunaKimochi <tokunakimochi@gmail.com>
 ;; Keywords: themes
 ;; URL: https://github.com/TokunaKimochi/emacs-opaque-bespin-theme
-;; Version: 20191019.0001
+;; Version: 20200620.0001
 ;; X-Original-Version: 2015
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -212,10 +212,9 @@
    `(mmm-output-submode-face ((,class (:background ,current-line))))
 
    ;; Search
-   `(match ((,class (:inherit nil :foreground ,yellow :background ,current-line :inverse-video nil))))
-   `(isearch ((,class (:inherit nil :foreground "orange" :background ,current-line :inverse-video nil))))
-   `(isearch-lazy-highlight-face ((,class (:inherit match))))
-   `(lazy-highlight-face ((,class (:inherit match))))
+   `(match ((,class (:inherit nil :foreground ,dracula-background :background ,dracula-purple))))
+   `(isearch ((,class (:inherit match :weight bold))))
+   `(lazy-highlight ((,class (:foreground ,dracula-pink :background ,dracula-background))))
    `(isearch-fail ((,class (:inherit error))))
 
    ;; Evil
@@ -225,8 +224,8 @@
    `(iedit-occurrence ((,class (:foreground ,background :background ,dracula-green))))
 
    ;; ahs
-   `(ahs-face ((,class (:inherit nil :background "#888A85"))))
-   `(ahs-plugin-whole-buffer-face ((,class (:inherit nil :background "#888A85"))))
+   `(ahs-face ((,class (:background ,sed-highlight))))
+   `(ahs-plugin-whole-buffer-face ((,class (:inherit match))))
 
    ;; Anzu
    `(anzu-mode-line ((,class (:foreground ,orange))))
